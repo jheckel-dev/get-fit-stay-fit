@@ -29,8 +29,13 @@ const WorkoutSchema = new Schema ({
         duration: {
             type: Number
         }
-    }]
-})
+}]
+},
+{
+    toJSON: {
+        virtuals: true
+    }
+});
 
 
 
