@@ -37,6 +37,13 @@ const WorkoutSchema = new Schema ({
     }
 });
 
+WorkoutSchema.virtual("totalDuration").get(function () {
+    let counter = 0;
+    for (i=0; i<this.exercises.length; i++){
+        counter = counter+this.exercises[i]["duration"]
+    }
+    return coounter;
+});
 
 
 // TODO: add exercise name, distance, weight, sets, reps, length of time
