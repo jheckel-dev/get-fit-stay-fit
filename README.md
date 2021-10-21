@@ -13,6 +13,11 @@ A fitness Tracking application to allow users to create and track workout routin
 or
 - follow deployed heroku link
 
+## Technologies Utilized
+- MongoDB
+- Express
+- Javascript
+- Node JS
 
 ## Links
 Heroku Deployment: https://secure-bayou-87598.herokuapp.com/
