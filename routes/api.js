@@ -26,5 +26,16 @@ router.put("api/workouts/:id", ({body, params}, res) => {
         res.json(err);
     });
 });
+// routes to stats page
+router.get("api/workouts/range", (req, res) => {
+    Workout.find({})
+    .limit(7)
+    .populate("exercises")
+    .then(dbWorkout => {
+        res.json(dbWorkout);
+    }).catch(err => {
+        res.json(err)
+    })
+})
 
-router.get("api/wor")
+module.exports = router;
