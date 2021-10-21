@@ -21,5 +21,5 @@ GitHub Repo: https://github.com/jheckel-dev/get-fit-stay-fit
 
 ## Images 
 
-![1] (public/assets/Screen Shot 2021-10-21 at 2.39.58 PM.png)
-![2] (public/assets/Screen Shot 2021-10-21 at 2.40.17 PM.png)
+![1](https://github.com/jheckel-dev/get-fit-stay-fit/blob/main/public/assets/Screen%20Shot%202021-10-21%20at%202.39.58%20PM.png?raw=true)
+![2](https://github.com/jheckel-dev/get-fit-stay-fit/blob/main/public/assets/Screen%20Shot%202021-10-21%20at%202.40.17%20PM.png?raw=true)
