@@ -45,6 +45,8 @@ WorkoutSchema.virtual("totalDuration").get(function () {
     return coounter;
 });
 
+const Workout = mongoose.model("Workout", WorkoutSchema);
+module.exports = Workout;
 
 // TODO: add exercise name, distance, weight, sets, reps, length of time
 // turn to JSON
