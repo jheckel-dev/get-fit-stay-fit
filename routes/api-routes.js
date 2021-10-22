@@ -3,7 +3,7 @@ const Workout = require("../models/workout.js");
 
 // retrieves your last workout
 router.get("api/workouts", (req, res) => {
-    Workout.find({})
+    db.Workout.find({})
     .populate("exercises")
     .then(dbWorkout => {
         res.json(dbWorkout);
@@ -14,7 +14,7 @@ router.get("api/workouts", (req, res) => {
 })
 // add to existing workout
 router.put("api/workouts/:id", ({body, params}, res) => {
-    Workout.findByIdAndUpdate(
+    db.Workout.findByIdAndUpdate(
         params.id,
         { $push: {exercises: body } },
         { new: true }
@@ -28,7 +28,7 @@ router.put("api/workouts/:id", ({body, params}, res) => {
 });
 // routes to stats page
 router.get("api/workouts/range", (req, res) => {
-    Workout.find({})
+    db.Workout.find({})
     .limit(7)
     .populate("exercises")
     .then(dbWorkout => {
@@ -39,7 +39,7 @@ router.get("api/workouts/range", (req, res) => {
 })
 // creates a workout
 router.post("/api/workouts", (req, res) => {
-    Workout.create({})
+    db.Workout.create({})
     .then (dbWorkout => {
         res.json(dbWorkout);
     })

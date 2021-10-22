@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
-const db = require('../models');
+const mongoose = require("mongoose");
+const db = require("../models");
 
-mongoose.connect('mongodb://localhost/workout', {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://jheckel:Pa$$word@cluster0.4ruu9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
